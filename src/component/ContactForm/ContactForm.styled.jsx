@@ -1,22 +1,32 @@
 import styled from '@emotion/styled';
 
-export const FormStyled = styled.form`
+export const Form = styled.form`
   display: flex;
-  flex-direction: column;
-  padding: 20px;
-  width: 300px;
-  border:  1px solid black;
-  & label {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+`;
+
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+  & input {
+    margin-left: 20px;
+    height: 25px;
   }
-  & button {
-    margin-top: 20px;
-    :hover,
-    :focus {
-      background-color: blue;
-      color: white;
-    }
+`;
+
+export const Button = styled.button`
+  height: 30px;
+  width: 100px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 250ms ease;
+  margin-left: 50px;
+  &:hover {
+    background-color: greenyellow;
   }
 `;

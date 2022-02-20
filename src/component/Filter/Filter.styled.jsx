@@ -1,7 +1,13 @@
 import styled from '@emotion/styled';
 
-export const FilterInput = styled.label`
+export const Container = styled.div`
   display: flex;
-  flex-direction: column;
-  width: 250px;
+  justify-content: center;
+  height: 30px;
+  align-items: center;
+  margin-top: -70px;
+  & input {
+    display: inline-block;
+    margin-left: 30px;
+  }
 `;
